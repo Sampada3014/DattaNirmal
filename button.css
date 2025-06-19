@@ -1,0 +1,146 @@
+:root {
+  --fill: #a972cb;
+  --pulse: #ef6eae;
+  --close: #ff7f82;
+  --raise: #ffa260;
+  --up: #e4cb58;
+  --slide: #8fc866;
+  --offset: #19bc8b;
+
+  --fill-hover: #cb72a9;
+  --pulse-hover: #ae6eef;
+  --close-hover: #82ff7f;
+  --raise-hover: #60a2ff;
+  --up-hover: #58e48f;
+  --slide-hover: #668fc8;
+  --offset-hover: #bc8b19;
+}
+
+body {
+  background: hsl(227, 10%, 10%);
+  color: #fff;
+  font: 300 1em 'Fira Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: inherit;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: #fff;
+}
+
+/* Effects */
+.fill {
+  --color: var(--fill);
+  --hover: var(--fill-hover);
+}
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+  border-color: var(--hover);
+}
+
+.pulse {
+  --color: var(--pulse);
+  --hover: var(--pulse-hover);
+}
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  border-color: var(--hover);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.close {
+  --color: var(--close);
+  --hover: var(--close-hover);
+}
+.close:hover,
+.close:focus {
+  box-shadow:
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);
+  border-color: var(--hover);
+}
+
+.raise {
+  --color: var(--raise);
+  --hover: var(--raise-hover);
+}
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  border-color: var(--hover);
+}
+
+.up {
+  --color: var(--up);
+  --hover: var(--up-hover);
+}
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  border-color: var(--hover);
+}
+
+.slide {
+  --color: var(--slide);
+  --hover: var(--slide-hover);
+}
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  border-color: var(--hover);
+}
+
+.offset {
+  --color: var(--offset);
+  --hover: var(--offset-hover);
+  box-shadow:
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover,
+.offset:focus {
+  box-shadow:
+    0 0 0 0 var(--hover),
+    inset 6em 3.5em 0 0 var(--hover);
+  border-color: var(--hover);
+}
