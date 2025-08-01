@@ -405,6 +405,62 @@
             </div>
          </div>
       </section>
+      <!-- Testimonial Section -->
+<!-- Testimonial Section -->
+	<section class="testimonial-section">
+		<div class="large-container">
+			<div class="sec-title">
+				<span class="title">Testimonial</span>
+				<h2>What Our core client say1 ?</h2>
+			</div>
+
+			<div class="testimonial-carousel owl-carousel owl-theme">
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="text">Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right.  Not only that but this event gives you the chance to give your back-office team</div>
+						<div class="info-box">
+							<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""></div>
+							<h4 class="name">Mahfuz Riad</h4>
+							<span class="designation">Ui Designer & CEO</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="text">Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right.  Not only that but this event gives you the chance to give your back-office team</div>
+						<div class="info-box">
+							<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""></div>
+							<h4 class="name">Mahfuz Riad</h4>
+							<span class="designation">Ui Designer & CEO</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="text">Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right.  Not only that but this event gives you the chance to give your back-office team</div>
+						<div class="info-box">
+							<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""></div>
+							<h4 class="name">Mahfuz Riad</h4>
+							<span class="designation">Ui Designer & CEO</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="thumb-layer paroller">
+				<figure class="image"><img src="http://t.commonsupport.com/adro/images/resource/user-thumbs.png" alt=""></figure>
+			</div>
+		</div>
+	</section>
+	<!--End Testimonial Section -->
+
+	<!--End Testimonial Section -->
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       <script src="main.js"></script>
       <link
@@ -412,22 +468,41 @@
          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
          />
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
-  const swiper = new Swiper(".marquee-slider", {
-    slidesPerView: "auto",
-    spaceBetween: 50,
-    loop: true,
-    speed: 5000,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
-    allowTouchMove: false,
-    freeMode: true,
-    freeModeMomentum: false,
-  });
-</script>
-
+    <script>
+ (function($) {
+	
+	"use strict";
+	
+	// Testimonial Carousel
+	if ($('.testimonial-carousel').length) {
+		$('.testimonial-carousel').owlCarousel({
+			animateOut: 'slideOutDown',
+		    animateIn: 'zoomIn',
+			loop:true,
+			margin:0,
+			nav:true,
+			smartSpeed: 300,
+			autoplay: 7000,
+			navText: [ '<span class="arrow-left"></span>', '<span class="arrow-right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:1
+				},
+				1024:{
+					items:1
+				}
+			}
+		});  		
+	}
+	
+})(window.jQuery);
+  </script>
+  
    </body>
 </html>

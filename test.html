@@ -1,55 +1,620 @@
-<p>
-    Credit scoring is a statistical method used by lenders (like banks and Financial Institutions ) to evaluate the creditworthiness of individuals or businesses. It's a way to predict how likely you are to repay borrowed money on time, based on your past credit behavior.
-</p>
-<p>
-    Here's a breakdown of how it works:
-</p>
-<h3>
-    1. Information Gathering:
-</h3>
-<ul>
-    <li>
-        Infomerics Analytics Credit scoring Model collect data about your credit history. This information comes from various sources, including banks, credit card issuers, and other lenders.
-    </li>
-    <li>
-        This data includes things like your payment history, outstanding debts, types of credit accounts you have, the length of your credit history, and any new credit you've applied for.
-    </li>
-</ul>
-<h3>
-    2. Scoring Models:
-</h3>
-<ul>
-    <li>
-        Infomerics Analytics Credit scoring models uses its Analytics tool to analyze the information in your credit report to generate a three-digit score.
-    </li>
-    <li>
-        These models assign different weights to various factors based on how well they predict future credit behavior. For example, payment history is usually the most significant factor.
-    </li>
-</ul>
-<h3>
-    3.The Score:
-</h3>
-<p>Credit scores typically range from 300 to 850 (though some models might have slightly different ranges). In India, CIBIL scores range from 300 to 900.</p>
-<p>A higher score generally indicates a lower credit risk, making it more likely that you'll be approved for credit and receive favorable terms like lower interest rates and higher credit limits.</p>
-<ul>
-    <li>
-        Here's a general idea of score ranges and what they typically mean:
-        <ul>
-            <li>
-                <strong>Excellent:</strong> 800-850 (or 750-900 in India)
-            </li>
-            <li>
-                <strong>Very Good:</strong> 740-799
-            </li>
-            <li>
-                <strong>Good:</strong> 670-739
-            </li>
-            <li>
-                <strong>Fair:</strong> 580-669
-            </li>
-            <li>
-                <strong>Poor:</strong> 300-579
-            </li>
-        </ul>
-    </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Home</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-xl navbar-light custom-navbar sticky-navbar-custome">
+         <div class="container">
+            <a class="navbar-brand" href="index.php">
+            <img src="images/dattanirmal-logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+               <div class="offcanvas-header">
+                  <a class="navbar-brand" href="index.php">
+                  <img src="images/dattanirmal-logo.png" alt="Logo" class="logo">
+                  </a>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="navbar-nav ms-auto">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" id="navbarDropdownCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                        </a>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                     <li class="nav-item dropdown">
+                        <a class="#products" id="navbarDropdownProducts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Products
+                           <svg width="10" height="6" viewBox="0 0 10 6" fill="#f15a24" xmlns="http://www.w3.org/2000/svg" class="ms-2 mt-0">
+                              <path d="M1 1L5 5L9 1" stroke="#f15a24" stroke-width="2" fill="none"/>
+                           </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                           <li><a class="dropdown-item" href="#">Mango (आंबा)</a></li>
+                           <li><a class="dropdown-item" href="#">Mango Pulp (आंब्याची पेस)</a></li>
+                           <li><a class="dropdown-item" href="#">Mango Pickle (आंब्याचे लोणचं)</a></li>
+                           <li><a class="dropdown-item" href="#">Malvani Masala (मालवणी मसाला)</a></li>
+                           <li><a class="dropdown-item" href="#">Kokum Agal (कोकम आगळ)</a></li>
+                           <li><a class="dropdown-item" href="#">Kokum Syrup (कोकम सरबत)</a></li>
+                           <li><a class="dropdown-item" href="#">Kokum (कोकम)</a></li>
+                           <li><a class="dropdown-item" href="#">Cashew (Dry & Fresh) (काजू - सुकटे व ताजे)</a></li>
+                           <li><a class="dropdown-item" href="#">Mango Wadi (आंब्याची वडी)</a></li>
+                           <li><a class="dropdown-item" href="#">Coconut Wadi (नारळ वडी)</a></li>
+                           <li><a class="dropdown-item" href="#">Coconut (नारळ)</a></li>
+                           <li><a class="dropdown-item" href="#">Jackfruit Chips (फणसाचे चिप्स)</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="#">Instagram</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Slider -->
+      <div id="heroCarousel" class="carousel slide" >
+         <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+               <img src="/images/Slide1.png" class="d-block w-100" alt="Slide 2">
+               <div class="carousel-caption">
+                  <div class="flex-custome">
+                     <h1 class="text-highlight">Konkan</h1>
+                     <h1 class="text-highlight-second">Delights</h1>
+                  </div>
+                  <p class="lead-custome">Experience the Authentic Taste of Konkan! <br>
+                     Pure. Traditional. 100% Natural.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- tab section  -->
+      <section class="py-5 customised-solutions">
+         <div class="container">
+            <h2 class="text-center mb-4">Dive Into Dattaniraml: Products, Values, and Mission</h2>
+            <div class="kabra-tabs scrollable-sm">
+               <div class=" scroll-tabs scrollable-tabs">
+                  <ul class="nav nav-tabs justify-content-center mb-4" id="solutionTabs" role="tablist">
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link Customised active" id="plasticulture-tab" data-bs-toggle="tab" data-bs-target="#plasticulture" type="button" role="tab">
+                        What We Offer
+                        </button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link Customised" id="infrastructure-tab" data-bs-toggle="tab" data-bs-target="#infrastructure" type="button" role="tab">
+                        Why Choose Dattaniraml?
+                        </button>
+                     </li>
+                     <span class="tab-divider">|</span>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link Customised" id="packaging-tab" data-bs-toggle="tab" data-bs-target="#packaging" type="button" role="tab">
+                        Our Mission & Vision
+                        </button>
+                     </li>
+                     <span class="tab-divider">|</span>
+                  </ul>
+               </div>
+            </div>
+            <div class="tab-content" id="solutionTabsContent">
+               <div class="tab-pane fade show active" id="plasticulture" role="tabpanel">
+                  <div id="plasticultureCarousel" class="carousel slide">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="images/kokankoma (2).png" class="d-block w-100 rounded Plasticulture-img" alt="Plasticulture 1">
+                           <div class="carousel-caption-Plasticulture">
+                              <p>
+                                 At Dattanirmal, we bring you the true taste and tradition of Konkan, straight from the heart of the coast to your home. Our offerings are deeply rooted in age-old recipes, natural farming, and authentic preparation methods passed down through generations.
+                                 We proudly offer a curated selection of Konkani specialties, crafted with care and purity to ensure every product reflects the rich heritage of our land. Whether it's the sweetness of the Alphonso mango, the tang of kokum, or the bold aroma of Malvani masala, each item tells a story of tradition, authenticity, and love.
+                                 From traditional snacks to natural beverages, from premium dry fruits to homemade pickles – everything we offer is a reflection of our commitment to quality, purity, and the timeless flavors of Konkan.
+                                 Experience the essence of Konkan – natural, traditional, and truly unforgettable – only with Dattanirmal.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="infrastructure" role="tabpanel">
+                  <div id="infrastructureCarousel" class="carousel slide" >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="images/kokankoma (2).png" class="img-fluid d-block w-100 rounded Plasticulture-img" alt="Plasticulture 1">
+                           <div class="carousel-caption-Plasticulture">
+                              <p>Choosing Dattanirmal means choosing the authentic soul of Konkan – untouched, unadulterated, and unforgettable.
+                                 ✅ Authenticity You Can Taste
+                                 Every product is made using traditional methods and locally sourced ingredients, staying true to the rich culinary heritage of Konkan.
+                                 ✅ Pure & Natural
+                                 No artificial flavors, no preservatives – just nature’s finest, handpicked and prepared with care.
+                                 ✅ Premium Quality, Always
+                                 We maintain strict quality checks to ensure that you get only the best – whether it's mangoes, spices, or snacks.
+                                 ✅ Handmade with Love
+                                 From mango pulp to coconut wadi, every item is handcrafted in small batches to retain its original taste and nutritional value.
+                                 ✅ Rooted in Tradition
+                                 We bring to you flavors that have been loved for generations – prepared using recipes passed down by our ancestors.
+                                 ✅ Direct from Konkan
+                                 By sourcing and preparing products locally, we support local farmers and artisans, ensuring freshness and authenticity in every bite.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="packaging" role="tabpanel">
+                  <div id="packagingCarousel" class="carousel slide" >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="images/kokankoma (2).png" class="img-fluid d-block w-100 rounded Plasticulture-img" alt="Plasticulture 1">
+                           <div class="carousel-caption-Plasticulture">
+                              <p>At Dattanirmal, our vision is to bring the authentic taste of Konkan to every home. We are committed to offering pure, traditional, and handcrafted Konkani products made with natural ingredients.
+                                 Our mission is to preserve Konkan’s rich food heritage, support local farmers and artisans, and deliver quality you can trust – straight from the coast to your kitchen.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade" id="telecom" role="tabpanel">
+                  <div id="telecomCarousel" class="carousel slide">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="https://devop.bcwebwise.com:8081/kabra-html/assets/images/latest/Packaging%20(2).jpg" class="img-fluid d-block w-100 rounded Plasticulture-img" alt="Plasticulture 1">
+                           <div class="carousel-caption-Plasticulture">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque, quibusdam sit id, quisquam velit sequi praesentium aliquam, fugiat doloremque facere neque aspernatur quae molestias vel possimus reprehenderit? Reiciendis, harum?</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="pb-3">
+         <div class="container-fluid p-0">
+            <div class="swiper marquee-slider pbmit-element-viewtype-carousel-2">
+               <div class="swiper-wrapper">
+                  <article class="pbmit-marquee-effect-style-1 swiper-slide">
+                     <div class="pbmit-tag-wrapper">
+                        <h2 class="pbmit-element-title" data-text="Konkan’s Special Products">
+                           Konkan’s Special Products
+                        </h2>
+                     </div>
+                  </article>
+                  <article class="pbmit-marquee-effect-style-1 swiper-slide">
+                     <div class="pbmit-tag-wrapper">
+                        <h2 class="pbmit-element-title" data-text="The Sweetness of Nature">
+                           The Sweetness of Nature
+                        </h2>
+                     </div>
+                  </article>
+                  <article class="pbmit-marquee-effect-style-1 swiper-slide">
+                     <div class="pbmit-tag-wrapper">
+                        <h2 class="pbmit-element-title" data-text="Taste of Tradition">
+                           Taste of Tradition
+                        </h2>
+                     </div>
+                  </article>
+                  <article class="pbmit-marquee-effect-style-1 swiper-slide">
+                     <div class="pbmit-tag-wrapper">
+                        <h2 class="pbmit-element-title" data-text="Direct from Konkan to You">
+                           Direct from Konkan to You
+                        </h2>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="py-5" id="products">
+         <div class="container">
+            <div class="background-img-bottom-left-engineered"></div>
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+               <div>
+                  <h2 class="custom-heading-engineered">
+                     Our Products – आमची उत्पादने
+                  </h2>
+               </div>
+               <div class="two-btn text-center text-md-end">
+                  <button class="btn btn-outline-dark custome-prev" id="prevBtn" style="margin-right: 12px;">
+                  <i class="fas fa-arrow-left" style="margin-right: 15px;"></i> Prev
+                  </button>
+                  <button class="btn btn-dark custome-next" id="nextBtn">
+                  Next <i class="fas fa-arrow-right" style="margin-left: 15px;"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="position-relative container-fluid">
+            <div class="product-slider d-flex" id="productContainer">
+               <div class="product-card">
+                  <img src="/images/Products/Hapus_Mango.webp" class="img-fluid" alt="Product 1">
+                  <div class="product-overlay">Mango (आंबा)</div>
+               </div>
+               <div class="product-card">
+                  <img src="/images/Products/mango-pulp.webp" class="img-fluid" alt="Product 2">
+                  <div class="product-overlay">Mango Pulp (आंब्याचा रस)</div>
+               </div>
+               <div class="product-card">
+                  <img src="/images/Products/mango-pickle.webp" class="img-fluid" alt="Product 3">
+                  <div class="product-overlay">Mango Pickle (आंब्याचे लोणचं)</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/mango_poli.webp" class="img-fluid" alt="Product 4">
+                  <div class="product-overlay">Mango Wadi (आंबा वडी)</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/kokam_agal.webp" class="img-fluid" alt="Product 1">
+                  <div class="product-overlay">Kokum Agal (कोकम आगळ)</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/kokam_sharbat.webp" class="img-fluid" alt="Product 2">
+                  <div class="product-overlay">Kokum Syrup (कोकम सिरप)</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/kokam.webp" class="img-fluid" alt="Product 3">
+                  <div class="product-overlay">Kokum (कोकम)</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/kaju.webp" class="img-fluid" alt="Product 3">
+                  <div class="product-overlay">काजुगर</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/fans.webp" class="img-fluid" alt="Product 3">
+                  <div class="product-overlay">फणस चिप्स</div>
+               </div>
+               <div class="product-card">
+                  <img src="images/Products/kulith.webp" class="img-fluid" alt="Product 3">
+                  <div class="product-overlay">कुळीथ पीठ</div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="about">
+         <div class="container">
+            <div class="about-content">
+               <div class="about-img">
+                  <img src="images/Taste of Konkan (1).png" alt="About Dattanirmal">
+               </div>
+               <div class="about-text">
+                  <div class="section-header">
+                     <h2>About Dattanirmal</h2>
+                     <p>Our Story</p>
+                  </div>
+                  <p>Dattanirmal is a premium brand dedicated to bringing the authentic taste of Konkan to your doorstep. We take pride in sourcing the finest quality products directly from local farmers and producers in the Konkan region.</p>
+                  <p>Our mission is to preserve and promote the rich culinary heritage of Konkan while ensuring that our customers receive only the freshest and most authentic products.</p>
+                  <p>Every product in our collection undergoes strict quality checks to ensure that you experience the true taste of Konkan with every bite.</p>
+                  <a href="#" class="btn primary-btn">Learn More</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+         <div class="container">
+            <div class="section-header">
+               <h2>What Our Customers Say</h2>
+               <p>Testimonials from our satisfied customers</p>
+            </div>
+            <div class="testimonial-slider">
+               <div class="testimonial-card">
+                  <div class="testimonial-text">
+                     <p>"The Alphonso mangoes from Dattanirmal are simply the best I've ever tasted. Sweet, juicy, and perfectly ripened. Will definitely order again!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <div class="author-info">
+                        <h4>Priya Sharma</h4>
+                        <p>Mumbai</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="testimonial-card">
+                  <div class="testimonial-text">
+                     <p>"Their Malvani Masala is authentic and adds the perfect flavor to my dishes. My family loves the traditional taste it brings to our meals."</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <div class="author-info">
+                        <h4>Rajesh Patil</h4>
+                        <p>Pune</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="testimonial-card">
+                  <div class="testimonial-text">
+                     <p>"The Kokum Agal is refreshing and has become a summer staple in our home. Highly recommend trying their traditional Konkani products!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <div class="author-info">
+                        <h4>Anjali Desai</h4>
+                        <p>Goa</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+         <div class="container">
+            <div class="newsletter-content">
+               <h2>Subscribe to Our Newsletter</h2>
+               <p>Stay updated with our latest products, seasonal offers, and traditional recipes</p>
+               <form class="newsletter-form">
+                  <input type="email" placeholder="Enter your email address" required>
+                  <button type="submit" class="btn primary-btn">Subscribe</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+         <div class="container">
+            <div class="section-header">
+               <h2>Get in Touch</h2>
+               <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+               <div class="contact-info">
+                  <div class="contact-card">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <h3>Our Location</h3>
+                     <p>123 Konkan Road, Ratnagiri, Maharashtra, India</p>
+                  </div>
+                  <div class="contact-card">
+                     <i class="fas fa-phone-alt"></i>
+                     <h3>Phone Number</h3>
+                     <p>+91 98765 43210</p>
+                  </div>
+                  <div class="contact-card">
+                     <i class="fas fa-envelope"></i>
+                     <h3>Email Address</h3>
+                     <p>info@dattanirmal.com</p>
+                  </div>
+                  <div class="contact-card">
+                     <i class="fas fa-clock"></i>
+                     <h3>Working Hours</h3>
+                     <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                  </div>
+               </div>
+               <div class="contact-form">
+                  <form>
+                     <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                     </div>
+                     <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                     </div>
+                     <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                     </div>
+                     <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                     </div>
+                     <button type="submit" class="btn primary-btn">Send Message</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="stories-section section-padding fix bg3">
+         <div class="container">
+            <div class="section-title text-center mb-50">
+               <span class="sub-font wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Stories</span>
+               <h2 class="fw-semibold wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                  Follow Us on <br> Instagram
+               </h2>
+            </div>
+            <div class="stories-wrapper">
+               <a href="#" class="stories-item wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+               <img src="images/Instagram/kokam (2).webp" alt="img" class="w-100">
+               <span class="ista d-center"><i class="fa-brands fa-instagram"></i></span>
+               </a>
+               <a href="#" class="stories-item wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+               <img src="images/Instagram/fans.webp" alt="img" class="w-100">
+               <span class="ista d-center"><i class="fa-brands fa-instagram"></i></span>
+               </a>
+               <a href="#" class="stories-item wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+               <img src="images/Instagram/gudhipadwa.webp" alt="img" class="w-100">
+               <span class="ista d-center"><i class="fa-brands fa-instagram"></i></span>
+               </a>
+               <a href="#" class="stories-item wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+               <img src="images/Instagram/fans.webp" alt="img" class="w-100">
+               <span class="ista d-center"><i class="fa-brands fa-instagram"></i></span>
+               </a>
+               <a href="#" class="stories-item wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+               <img src="images/Instagram/kokam (2).webp" alt="img" class="w-100">
+               <span class="ista d-center"><i class="fa-brands fa-instagram"></i></span>
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+         <div class="container">
+            <div class="footer-content">
+               <div class="footer-logo">
+                  <img src="images/dattanirmal-logo.png" alt="Dattanirmal Logo" class="footer-logo-img" />
+                  <p class="tagline">Taste of Konkan</p>
+                  <p>Taste the purity of Konkan with Dattanirmal – bringing you natural, traditional, and high-quality Konkani products!</p>
+                  <div class="social-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+               <div class="footer-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#products">Products</a></li>
+                     <li><a href="#about">About Us</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <li><a href="#">Blog</a></li>
+                  </ul>
+               </div>
+               <div class="footer-links">
+                  <h3>Products</h3>
+                  <ul>
+                     <li><a href="#">Mangoes</a></li>
+                     <li><a href="#">Spices</a></li>
+                     <li><a href="#">Beverages</a></li>
+                     <li><a href="#">Snacks</a></li>
+                     <li><a href="#">Sweets</a></li>
+                  </ul>
+               </div>
+               <div class="footer-links">
+                  <h3>Support</h3>
+                  <ul>
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">Shipping Policy</a></li>
+                     <li><a href="#">Return Policy</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <p>&copy; 2023 Dattanirmal. All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="main.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+         />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script>
+         const swiper = new Swiper(".marquee-slider", {
+           slidesPerView: "auto",
+           spaceBetween: 50,
+           loop: true,
+           speed: 5000,
+           autoplay: {
+             delay: 1,
+             disableOnInteraction: false,
+             pauseOnMouseEnter: true,
+           },
+           allowTouchMove: false,
+           freeMode: true,
+           freeModeMomentum: false,
+         });
+      </script>
+      <script>
+         // Engineered Excellence 
+         const productContainer = document.getElementById('productContainer');
+         const cardWidth = document.querySelector('.product-card').offsetWidth + 15; // card width + gap
+         
+         // Button-based scrolling
+         const scrollContainer = (container, direction) => {
+          container.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+         };
+         
+         document.getElementById('nextBtn').addEventListener('click', () => scrollContainer(productContainer, 1));
+         document.getElementById('prevBtn').addEventListener('click', () => scrollContainer(productContainer, -1));
+         
+         // Mouse drag functionality
+         let isDown = false;
+         let startX;
+         let scrollLeft;
+         
+         const enableDragScroll = (container) => {
+          container.addEventListener('mousedown', (e) => {
+              isDown = true;
+              startX = e.pageX - container.offsetLeft;
+              scrollLeft = container.scrollLeft;
+          });
+          
+          container.addEventListener('mouseleave', () => { isDown = false; });
+          container.addEventListener('mouseup', () => { isDown = false; });
+          
+          container.addEventListener('mousemove', (e) => {
+              if (!isDown) return;
+              e.preventDefault();
+              const x = e.pageX - container.offsetLeft;
+              const walk = (x - startX) * 2; // Adjust speed
+              container.scrollLeft = scrollLeft - walk;
+          });
+         };
+         
+         enableDragScroll(productContainer);
+         
+         // Service box scrolling
+         const container = document.getElementById("service-box-card");
+         const prevBtn = document.getElementById("prevBtn-custome-service");
+         const nextBtn = document.getElementById("nextBtn-custome--service");
+         const cards = document.querySelectorAll("#service-box-card .col-md-4");
+         
+         function updateCardWidth() {
+          if (window.innerWidth <= 1024) { 
+              cards.forEach(card => card.style.minWidth = "100%");
+              container.classList.add("overflow-auto");
+          } else { 
+              cards.forEach(card => card.style.minWidth = "auto");
+              container.classList.remove("overflow-auto");
+          }
+         }
+         
+         prevBtn.addEventListener("click", () => scrollContainer(container, -1));
+         nextBtn.addEventListener("click", () => scrollContainer(container, 1));
+         window.addEventListener("resize", updateCardWidth);
+         updateCardWidth();
+         
+         enableDragScroll(container);
+      </script>
+      <script>
+         (function($) {
+         
+         "use strict";
+         
+         // Testimonial Carousel
+         if ($('.testimonial-carousel').length) {
+         $('.testimonial-carousel').owlCarousel({
+         animateOut: 'slideOutDown',
+         animateIn: 'zoomIn',
+         loop:true,
+         margin:0,
+         nav:true,
+         smartSpeed: 300,
+         autoplay: 7000,
+         navText: [ '<span class="arrow-left"></span>', '<span class="arrow-right"></span>' ],
+         responsive:{
+         0:{
+         items:1
+         },
+         600:{
+         items:1
+         },
+         800:{
+         items:1
+         },
+         1024:{
+         items:1
+         }
+         }
+         });  		
+         }
+         
+         })(window.jQuery);
+      </script>
+      <!-- Owl Carousel CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+      <!-- jQuery (Required for Owl Carousel) -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Owl Carousel JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   </body>
+</html>
